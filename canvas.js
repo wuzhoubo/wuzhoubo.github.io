@@ -307,7 +307,7 @@ var trans = {
             this.toX = (e.touches[0].clientX - this.canvas.width / 2) * -0.8;
             this.toY = (e.touches[0].clientY - this.canvas.height / 2) * 0.8;
         }.bind(this));
-        aside.addEventListener('mousedown', function(e) {
+      /*  aside.addEventListener('mousedown', function(e) {
             for (var i = 0; i < 100; i++) {
                 this.add();
             }
@@ -317,7 +317,7 @@ var trans = {
             for (var i = 0; i < 100; i++) {
                 this.add();
             }
-        }.bind(this));
+        }.bind(this));*/
     };
     var app = new Build();
     app.run();
