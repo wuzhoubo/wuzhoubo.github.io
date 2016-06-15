@@ -1,0 +1,6 @@
+permalink: /:title
+
+title: "wuBlog"
+url: http://wublog.github.io
+feed: /atom.xml
+author_info: <a href="http://wublog.github.io">WuBlog</a>

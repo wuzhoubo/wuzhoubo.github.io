@@ -1,0 +1,13 @@
+<div class="uYan">
+    <a href="javascript:void(0)" id="showUyan">查看留言</a>
+</div>
+<script>
+    var htm = '<div id="uyan_container">';
+    htm += '<div id="uyan_frame"></div>';
+    htm += '<script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js?uid=2101778">';
+    htm += '< /script></div>';
+    $("#showUyan").click(function () {
+        $(".uYan").html(htm);
+    })
+</script>
+

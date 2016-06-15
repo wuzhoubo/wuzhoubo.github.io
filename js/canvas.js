@@ -1,8 +1,9 @@
 var bCan = $("#backgroundCanvas");
+var ah = $("#aside").height();
+bCan.css("height",ah);
 var num = 200;
 var w = bCan.width();
-var h = bCan.height();
-console.log(w,h);
+var h = ah;
 var max = 100;
 var _x = 0;
 var _y = 0;
