@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>canvas 探照灯</title>
+</head>
+<body>
+<div style="width: 800px;height: 600px;border: 1px solid #CCC;margin: 0 auto;">
+    <canvas id="canvas"></canvas>
+</div>
+
+<script>
+    var searchLight = {x: 400, y: 300, radius: 150, vx: Math.random() * 5 + 10, vy: Math.random() * 5 + 10};
+    console.log(searchLight);
+    window.onload = function () {
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+
+        canvas.width = 800;
+        canvas.height = 600;
+
+        setInterval(function () {
+            draw(context);
+            updata(canvas.width, canvas.height);
+        }, 50);
+    }
+    function draw(cxt) {
+        var canvas = cxt.canvas;
+
+        cxt.clearRect(0, 0, canvas.width, canvas.height);
+
+        cxt.save();
+
+        cxt.beginPath();
+        cxt.fillStyle = "#000";
+        cxt.fillRect(0,0,canvas.width,canvas.height);
+
+        cxt.beginPath();
+        cxt.arc(searchLight.x,searchLight.y,searchLight.radius,0,Math.PI*2);
+        cxt.fillStyle = "#FFF";
+        cxt.fill();
+        cxt.clip();
+
+        cxt.font = "bold 120px Arial";
+        cxt.textAlign = "center";
+        cxt.fillStyle = "#058";
+        cxt.fillText("I Love NaNa", canvas.width / 2, canvas.height / 2);
+
+        cxt.restore();
+    }
+    function updata(canvasWidht,canvasHeight) {
+        searchLight.x += searchLight.vx;
+        searchLight.y += searchLight.vy;
+        if(searchLight.x - searchLight.radius<=0){
+            searchLight.vx = -searchLight.vx;
+            searchLight.x = searchLight.radius;
+        }
+
+        if(searchLight.y - searchLight.radius <=0){
+            searchLight.vy = -searchLight.vy;
+            searchLight.y = searchLight.radius;
+        }
+        if(searchLight.x +searchLight.radius>=canvasWidht){
+            searchLight.vx = -searchLight.vx;
+            searchLight.x = canvasWidht - searchLight.radius;
+        }
+
+        if(searchLight.y +searchLight.radius>=canvasHeight){
+            searchLight.vy = -searchLight.vy;
+            searchLight.y = canvasHeight - searchLight.radius;
+        }
+    }
+</script>
+</body>
+</html>
