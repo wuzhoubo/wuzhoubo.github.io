@@ -40,4 +40,4 @@ $(function(){
 </script>
 ```   
 
-[demo](http://wuzhoubo.github.io/dist/downTree/demo)
+[demo](http://wuzhoubo.github.io/dist/downTree/demo/demo.html)
