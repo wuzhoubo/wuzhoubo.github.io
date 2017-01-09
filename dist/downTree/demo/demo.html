@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="../jquery/jquery-1.10.2.min.js"></script>
+    <script src="../tree/js/jquery.ztree.all.js"></script>
+    <link rel="stylesheet" href="../tree/css/zTreeStyle/zTreeStyle.css"/>
+    <script src="../downTree.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="testBox" style="width: 800px;height: 700px;position: relative;margin: 0 auto;">
+<input type="text" placeholder="输入或者选择人" class="test" style="width: 200px;height: 30px;display: block;margin: 0 auto"/>
+</div>
+<script>
+    $(function(){
+        var zNodes = [
+            {name: "人事部",children: [
+                {name: "张三丰"},
+                {name: "李四季"}
+            ]},
+            {name: "test2",children: [
+                {name: "王五福"},
+                {name: "赵六祥"}
+            ]}
+        ];
+        $(".test").downTree(zNodes);
+    })
+</script>
+</body>
+</html>
