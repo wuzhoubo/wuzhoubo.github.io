@@ -1,0 +1,51 @@
+.imgScroll {
+    height: 300px;
+    width: 450px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+.imgScroll .img-list {
+    height: 300px;
+    width: 2250px;
+    position: absolute;
+    left: -450px;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
+}
+
+.img-li-float {
+    float: left;
+    width: 450px;
+    height: 300px;
+}
+.img-li-float img{
+    width: 450px;
+    height: 300px;
+}
+.imgScrill-icon{
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    margin-left: -75px;
+    bottom: 5px;
+    text-align: center;
+    z-index: 4;
+}
+.imgScrill-icon a{
+    width: 10px;
+    height: 5px;
+    background-color: #fff;
+    display: inline-block;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.imgScrill-icon .active{
+    background-color: #bbb;
+}

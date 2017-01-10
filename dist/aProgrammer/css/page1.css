@@ -1,0 +1,58 @@
+/*page1*/
+.myname{
+    font-size: 35px;
+    font-family: 'museo_slab500', Calibri, Arial, sans-serif;
+    color: #FFF;
+    text-shadow: 0 0 2px #18181a;
+    padding-top: 150px;
+}
+.ido{
+    font-size: 28px;
+    font-family: 'open_sanslight', Calibri, Arial, sans-serif;
+    width: 100%;
+    color: #b9b9b9;
+    margin-bottom: 0.8em;
+}
+.divide {
+    border-bottom: solid 1px #f05f3b;
+    clear: both;
+    width: 180px;
+    height: 1px;
+    margin: 0 auto;
+}
+.location {
+    background: url("../font/location.svg") no-repeat;
+    color: #b9b9b9;
+    font-family: 'open_sanslight', Calibri, Arial, sans-serif;
+    font-size: 14px;
+    width: 170px;
+    padding-left: 25px;
+    margin: 1em auto 0;
+    height: 25px;
+    line-height: 25px;
+}
+.knowMore{
+    font-size: 28px;
+    width: 350px;
+    height: 58px;
+    margin: 0 auto;
+    line-height: 58px;
+    margin-top: 30px;
+    border:1px solid #f05f3b;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -ms-transition:all 0.2s;
+    -o-transition:all 0.2s;
+    transition:all 0.2s;
+}
+.knowMore:hover{
+    box-shadow: -2px -2px 2px rgba(240,95,59,0.8),-4px -4px 4px rgba(240,95,59,0.3);
+    -webkit-transform:translateY(2px);
+    -moz-transform:translateY(2px);
+    -ms-transform:translateY(2px);
+    -o-transform:translateY(2px);
+    transform:translateY(2px);
+    background: #18181A;
+}
