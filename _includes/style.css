@@ -449,11 +449,17 @@ a:hover {
     font-size: 14px;
     font-style: italic;
 }
-
 .post-wrapper img {
     max-width: 670px;
     display: block;
     margin: 10px auto;
+}
+@media (max-width: 600px) {
+  .post-wrapper img {
+    max-width: 90%;
+    display: block;
+    margin: 10px auto;
+}
 }
 
 .post-wrapper table {
