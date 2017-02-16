@@ -454,13 +454,7 @@ a:hover {
     display: block;
     margin: 10px auto;
 }
-@media (max-width: 600px) {
-  .post-wrapper img {
-    max-width: 90%;
-    display: block;
-    margin: 10px auto;
-}
-}
+
 
 .post-wrapper table {
     margin: 0 auto;
@@ -472,7 +466,16 @@ a:hover {
     margin: 0 auto;
     padding: 30px 60px;
 }
-
+@media (max-width: 600px) {
+  .post-wrapper img {
+    max-width: 90%;
+    display: block;
+    margin: 10px auto;
+}
+	.about-wrapper {
+		width: 100%;
+	}
+}
 .about-wrapper .aboutme {
     zoom: 1;
 }
