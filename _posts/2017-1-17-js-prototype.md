@@ -2,7 +2,7 @@
 layout:     post
 title:      js原型链和js属性操作
 category: blog
-description: 下拉选择树插件
+description:
 ---   
 ### js创建对象的两种方法   
 
