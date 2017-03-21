@@ -1,6 +1,9 @@
 permalink: /:title
 
-title: "wuBlog"
+title: "wuzhoubo"
 url: http://wublog.github.io
 feed: /atom.xml
-author_info: <a href="http://wublog.github.io">WuBlog</a>
+author_info: <a href="http://wuzhoubo.github.io">WuZhoubo</a>
+markdown: kramdown
+kramdown:
+  input:  GFM
